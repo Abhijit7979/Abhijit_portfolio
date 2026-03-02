@@ -47,8 +47,7 @@ export const GitHubContributionsSection = () => {
       <FadeInView>
         <div className="flex flex-col items-center">
           <SectionHeading
-            label="Open Source"
-            title="GitHub Contributions"
+            title="GitHub"
             description="Contribution activity from my GitHub profile"
           />
           <Card className="w-full max-w-4xl border border-border/80 bg-card/50 overflow-hidden hover:border-primary/30 transition-colors duration-300">

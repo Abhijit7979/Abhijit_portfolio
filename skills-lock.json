@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "vercel-deploy": {
+      "source": "supercent-io/skills-template",
+      "sourceType": "github",
+      "computedHash": "3ab4f961ca2fe72409c1aea00fed448c371e53e2fb7ba9054d5660330e22b578"
+    }
+  }
+}
