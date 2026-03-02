@@ -57,6 +57,10 @@ body {
   color: hsl(var(--foreground));
   font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
   font-feature-settings: "rlig" 1, "calt" 1;
+  font-size: 1rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 /* Background orb animations — slow, atmospheric drift and pulse */
@@ -133,6 +137,17 @@ body::before {
 
 html {
   scroll-behavior: smooth;
+  font-size: 19px;
+}
+
+@layer base {
+  p {
+    font-size: 1.05rem;
+  }
+  small,
+  .text-xs {
+    font-size: 0.9rem;
+  }
 }
 
 /* Selection */

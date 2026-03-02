@@ -1,6 +1,16 @@
 {
   "version": 1,
   "skills": {
+    "context7": {
+      "source": "am-will/codex-skills",
+      "sourceType": "github",
+      "computedHash": "9cfc98a08e8de60c57e2413c27bfdeb94f1e5a07dba44d4cbf3460d7f537669a"
+    },
+    "ui-ux-pro-max": {
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "sourceType": "github",
+      "computedHash": "e688fcd4c5693e14ebd00d48e982dbd2be060fbea89f5f60531e79c704a1bc28"
+    },
     "vercel-deploy": {
       "source": "supercent-io/skills-template",
       "sourceType": "github",

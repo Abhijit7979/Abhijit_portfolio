@@ -9,7 +9,7 @@ export const projects: Project[] = [
     category: "AI/ML",
     technologies: ["Python", "LangChain", "LangGraph", "Phidata", "LLaMA 3.1", "DeepSeek", "Groq API", "YFinance", "DuckDuckGo"],
     image: "/images/projects/financial-chatbot.png",
-    githubUrl: "https://github.com/Abhijit7979/multi-agent-financial-chatbot",
+    githubUrl: "https://github.com/Abhijit7979/Agentic-Ai",
     featured: true,
     highlights: [
       "Multi-agent architecture with specialized roles for finance and web research",
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     category: "AI/ML",
     technologies: ["Python", "LangChain", "LangGraph", "SQLite", "Streamlit", "OpenAI APIs"],
     image: "/images/projects/nl-sql-agent.png",
-    githubUrl: "https://github.com/Abhijit7979/natural-language-sql-agent",
+    githubUrl: "https://github.com/Abhijit7979/HR_Agent",
     featured: true,
     highlights: [
       "3-node graph architecture for query generation and execution",

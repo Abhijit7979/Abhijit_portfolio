@@ -1,8 +1,5 @@
 'use client';
 
-import { Github, Globe, Linkedin, Mail } from 'lucide-react';
-import { socialLinks } from '@/data/portfolio';
-
 export const Footer = () => {
   const year = new Date().getFullYear();
 
@@ -15,26 +12,6 @@ export const Footer = () => {
             <p className="text-sm text-muted-foreground mt-2">
               © {year} S. Abhijit Rao
             </p>
-            <p className="text-xs text-muted-foreground/80">
-              Built with Next.js & Tailwind CSS
-            </p>
-          </div>
-          <div className="flex items-center gap-3">
-            {socialLinks.map((link) => (
-              <a
-                key={link.platform}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2.5 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors duration-200"
-                aria-label={link.platform}
-              >
-                {link.icon === 'Github' && <Github className="h-5 w-5" />}
-                {link.icon === 'Linkedin' && <Linkedin className="h-5 w-5" />}
-                {link.icon === 'Globe' && <Globe className="h-5 w-5" />}
-                {link.icon === 'Mail' && <Mail className="h-5 w-5" />}
-              </a>
-            ))}
           </div>
         </div>
       </div>
