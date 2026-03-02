@@ -10,10 +10,12 @@ export interface PersonalInfo {
   resumeUrl: string;
 }
 
+export type SocialIconName = 'Github' | 'Linkedin' | 'Globe' | 'Mail';
+
 export interface SocialLink {
   platform: 'github' | 'linkedin' | 'twitter' | 'email' | 'website';
   url: string;
-  icon: string;
+  icon: SocialIconName;
 }
 
 export interface Project {
