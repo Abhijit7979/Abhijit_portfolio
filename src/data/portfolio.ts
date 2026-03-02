@@ -2,15 +2,18 @@ import { PersonalInfo, SocialLink } from '@/types/portfolio';
 
 export const personalInfo: PersonalInfo = {
   name: "S. Abhijit Rao",
-  role: "B.Tech AI Graduate | Agentic AI Engineer",
-  tagline: "Building intelligent systems with LangChain, RAG, and Multi-Agent Workflows",
-  bio: "Motivated B.Tech (Artificial Intelligence) graduate with hands-on experience building production-style AI and software solutions. Proficient in Python and SQL, experienced with LLM frameworks, RAG pipelines, vector databases (ChromaDB), FastAPI, and React. Demonstrated impact through internships and projects—reduced manual video-editing effort using automated RAG flows and earned 'Intern of the Month' at Prodigal AI.",
+  role: "AI Engineer | B.Tech AI",
+  tagline: "RAG, multi-agent workflows, and production AI systems. Building enterprise solutions as a freelance AI engineer.",
+  bio: "AI Engineer with production expertise in Retrieval-Augmented Generation (RAG) systems and multi-agent workflows. Reduced manual file search time at Nuevosol Energy through an Agentic RAG chatbot and streamlined video editing workflows at Prodigal AI, earning Intern of the Month (April 2025). Specialized in LangChain/LangGraph, vector databases, and backend AI development. Currently building enterprise AI solutions as a freelance engineer at Astraveda—Ask Astra chatbot and Click Astra OCR for petroleum analytics—with hands-on experience in agentic AI, LLM orchestration, and modern AI infrastructure.",
   email: "sar.abhijit2003@gmail.com",
   phone: "+91 9985727779",
   location: "India",
   profileImage: "/images/profile/abhijit-rao.jpg",
-  resumeUrl: "/resume/Abhijit_Rao_Resume.pdf"
+  resumeUrl: "/resume/Abhijit_rao_AI_Engineer.pdf"
 };
+
+/** Used for GitHub contribution/activity graph embeds */
+export const githubUsername = 'Abhijit7979';
 
 export const socialLinks: SocialLink[] = [
   {
@@ -22,6 +25,11 @@ export const socialLinks: SocialLink[] = [
     platform: "linkedin",
     url: "https://www.linkedin.com/in/abhijit79",
     icon: "Linkedin"
+  },
+  {
+    platform: "website",
+    url: "https://www.abhijit-rao.me",
+    icon: "Globe"
   },
   {
     platform: "email",

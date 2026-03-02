@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { inter, spaceGrotesk, jetbrainsMono } from "./fonts";
+import { dmSans, syne, jetbrainsMono } from "./fonts";
+import { Background } from "@/components/layout/Background";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -50,8 +51,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} antialiased`}
+        className={`${dmSans.variable} ${syne.variable} ${jetbrainsMono.variable} antialiased`}
       >
+        <Background />
         {children}
       </body>
     </html>

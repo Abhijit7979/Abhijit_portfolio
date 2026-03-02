@@ -1,17 +1,17 @@
-import { Inter, JetBrains_Mono, Space_Grotesk } from 'next/font/google';
+import { DM_Sans, JetBrains_Mono, Syne } from 'next/font/google';
 
-export const inter = Inter({
+export const dmSans = DM_Sans({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-dm-sans',
   display: 'swap',
   weight: ['300', '400', '500', '600', '700'],
 });
 
-export const spaceGrotesk = Space_Grotesk({
+export const syne = Syne({
   subsets: ['latin'],
-  variable: '--font-space-grotesk',
+  variable: '--font-syne',
   display: 'swap',
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600', '700', '800'],
 });
 
 export const jetbrainsMono = JetBrains_Mono({

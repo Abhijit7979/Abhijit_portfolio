@@ -1,26 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: 214 100% 4%;
-  --foreground: 210 40% 98%;
-  --card: 217 19% 12%;
-  --card-foreground: 210 40% 98%;
-  --popover: 217 19% 12%;
-  --popover-foreground: 210 40% 98%;
-  --primary: 192 91% 59%;
-  --primary-foreground: 214 100% 4%;
-  --secondary: 263 70% 65%;
-  --secondary-foreground: 214 100% 4%;
-  --muted: 217 19% 27%;
-  --muted-foreground: 215 16% 70%;
-  --accent: 217 91% 60%;
-  --accent-foreground: 210 40% 98%;
+  /* Sky blue theme — light, airy palette */
+  --background: 204 33% 97%;
+  --foreground: 208 35% 14%;
+  --card: 0 0% 100%;
+  --card-foreground: 208 35% 14%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 208 35% 14%;
+  --primary: 199 89% 48%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 204 25% 92%;
+  --secondary-foreground: 208 35% 14%;
+  --muted: 204 22% 92%;
+  --muted-foreground: 208 18% 42%;
+  --accent: 199 89% 48%;
+  --accent-foreground: 0 0% 100%;
   --destructive: 0 72% 51%;
-  --destructive-foreground: 210 40% 98%;
-  --border: 217 19% 27%;
-  --input: 217 19% 27%;
-  --ring: 192 91% 59%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 204 22% 88%;
+  --input: 204 22% 88%;
+  --ring: 199 89% 48%;
   --radius: 0.5rem;
+  --glow: 199 89% 48% / 0.3;
 }
 
 @theme inline {
@@ -44,20 +46,69 @@
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
 
-  --color-cyan-500: hsl(192 91% 59%);
-  --color-purple-500: hsl(263 70% 65%);
-  --color-blue-500: hsl(217 91% 60%);
-
-  --font-sans: var(--font-inter);
-  --font-heading: var(--font-space-grotesk);
-  --font-mono: var(--font-jetbrains-mono);
+  --font-sans: var(--font-dm-sans), system-ui, -apple-system, sans-serif;
+  --font-heading: var(--font-syne), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
 }
 
 body {
+  /* Fallback; main background is the Background component */
   background: hsl(var(--background));
   color: hsl(var(--foreground));
   font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
   font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Background orb animations — slow, atmospheric drift and pulse */
+@keyframes background-float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(3%, 2%) scale(1.02);
+  }
+}
+@keyframes background-float-slow {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-2%, -1.5%);
+  }
+}
+@keyframes background-pulse {
+  0%,
+  100% {
+    opacity: 0.28;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(1.05);
+  }
+}
+
+.animate-background-float {
+  animation: background-float 22s ease-in-out infinite;
+}
+.animate-background-float-slow {
+  animation: background-float-slow 28s ease-in-out infinite;
+}
+.animate-background-pulse {
+  animation: background-pulse 8s ease-in-out infinite;
+}
+
+/* Grain overlay for depth — sits above all background layers */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
 
 @layer base {
@@ -67,12 +118,53 @@ body {
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading), system-ui, sans-serif;
     font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .font-heading {
+    font-family: var(--font-heading), system-ui, sans-serif;
   }
   code, pre {
     font-family: var(--font-mono), monospace;
+  }
+  a {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm;
   }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Selection */
+::selection {
+  background: hsl(var(--primary) / 0.3);
+  color: hsl(var(--foreground));
+}
+
+/* Moving border button — rotating gradient (refined, slow) */
+@keyframes moving-border-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Slight speed-up on hover for a subtle surprise */
+.moving-border-btn:hover .moving-border-gradient {
+  animation-duration: 3200ms;
+}
+
+/* Contact section — card hover lift and icon emphasis */
+.contact-card {
+  will-change: transform;
+}
+.contact-card:hover .contact-card-icon-wrapper {
+  transform: scale(1.08);
+  background: hsl(var(--primary) / 0.2);
+}
+.contact-card:focus-within .contact-card-icon-wrapper {
+  transform: scale(1.08);
+  background: hsl(var(--primary) / 0.2);
 }

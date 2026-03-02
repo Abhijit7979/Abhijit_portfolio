@@ -11,7 +11,7 @@ export interface PersonalInfo {
 }
 
 export interface SocialLink {
-  platform: 'github' | 'linkedin' | 'twitter' | 'email';
+  platform: 'github' | 'linkedin' | 'twitter' | 'email' | 'website';
   url: string;
   icon: string;
 }
@@ -43,6 +43,10 @@ export interface Experience {
   responsibilities: string[];
   achievements: string[];
   technologies: string[];
+  productionLinks?: {
+    website: string;
+    app: string;
+  };
 }
 
 export interface Skill {
@@ -64,6 +68,8 @@ export interface Achievement {
   description?: string;
   image?: string;
   credentialUrl?: string;
+  /** Quote or snippet for social post preview cards */
+  previewQuote?: string;
 }
 
 export interface BlogPost {

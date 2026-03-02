@@ -38,10 +38,10 @@ export const StaggerItem = ({ children, className = '' }: { children: ReactNode;
   return (
     <motion.div
       variants={{
-        hidden: { opacity: 0, y: 30 },
+        hidden: { opacity: 0, y: 24 },
         visible: { opacity: 1, y: 0 },
       }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
+      transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >
       {children}

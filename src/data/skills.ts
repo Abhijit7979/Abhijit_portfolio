@@ -2,10 +2,13 @@ import { SkillCategory } from '@/types/portfolio';
 
 export const skillCategories: SkillCategory[] = [
   {
-    category: "Languages",
+    category: "Programming Languages",
     skills: [
       { name: "Python", proficiency: "expert" },
-      { name: "SQL", proficiency: "advanced" }
+      { name: "SQL", proficiency: "advanced" },
+      { name: "Java", proficiency: "intermediate" },
+      { name: "C++", proficiency: "intermediate" },
+      { name: "Node.js", proficiency: "advanced" }
     ]
   },
   {
@@ -18,6 +21,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "FastAPI", proficiency: "advanced" },
       { name: "Streamlit", proficiency: "advanced" },
       { name: "Scikit-Learn", proficiency: "advanced" },
+      { name: "React", proficiency: "advanced" },
+      { name: "Express.js", proficiency: "advanced" },
       { name: "TensorFlow", proficiency: "intermediate" },
       { name: "OpenAI APIs", proficiency: "expert" },
       { name: "ChromaDB", proficiency: "advanced" },
@@ -34,7 +39,9 @@ export const skillCategories: SkillCategory[] = [
       { name: "Version Control (Git)", proficiency: "advanced" },
       { name: "Data Preprocessing", proficiency: "advanced" },
       { name: "Debugging with Langsmith", proficiency: "advanced" },
-      { name: "Vector Databases", proficiency: "advanced" }
+      { name: "Vector Databases", proficiency: "advanced" },
+      { name: "Software Testing", proficiency: "advanced" },
+      { name: "SDLC", proficiency: "advanced" }
     ]
   },
   {
