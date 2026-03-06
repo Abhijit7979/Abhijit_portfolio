@@ -1,4 +1,4 @@
-# S. Abhijit Rao - Personal Portfolio
+# S. Abhijit Rao - Personal Portfolio for IBM pyspark
 
 A modern, minimal AI-themed portfolio website built with Next.js 15, TypeScript, and Tailwind CSS.
 
