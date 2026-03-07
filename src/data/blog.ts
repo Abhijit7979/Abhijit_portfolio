@@ -2,32 +2,32 @@ import { BlogPost } from '@/types/portfolio';
 
 export const blogPosts: BlogPost[] = [
   {
-    id: "rag-pipelines-production",
-    title: "Building Production-Ready RAG Pipelines",
-    excerpt: "Learn how to build and deploy RAG pipelines with vector databases for real-world applications.",
+    id: "building-etl-pipelines-pyspark",
+    title: "Building Scalable ETL Pipelines with PySpark",
+    excerpt: "Learn how to design and deploy production-grade ETL pipelines using PySpark and AWS for large-scale data processing.",
     content: "Coming soon...",
     date: "2025-07-01",
-    tags: ["RAG", "LangChain", "ChromaDB", "AI"],
+    tags: ["PySpark", "ETL", "AWS", "Data Engineering"],
     readTime: 8,
     published: false
   },
   {
-    id: "multi-agent-systems",
-    title: "Multi-Agent Systems with LangGraph",
-    excerpt: "A deep dive into building collaborative multi-agent systems using LangGraph and specialized AI agents.",
+    id: "data-pipeline-orchestration-airflow",
+    title: "Data Pipeline Orchestration with Apache Airflow",
+    excerpt: "A deep dive into orchestrating complex data workflows with Airflow, including scheduling, monitoring, and error handling.",
     content: "Coming soon...",
     date: "2025-07-15",
-    tags: ["Multi-Agent", "LangGraph", "AI", "Architecture"],
+    tags: ["Airflow", "Orchestration", "Data Pipelines", "Python"],
     readTime: 10,
     published: false
   },
   {
-    id: "automated-video-editing-ai",
-    title: "Automating Video Editing with AI",
-    excerpt: "How AI and RAG can transform content creation workflows and reduce manual editing time.",
+    id: "data-quality-governance",
+    title: "Data Quality & Governance in Production Systems",
+    excerpt: "Best practices for implementing data validation, quality checks, and compliance monitoring in production data pipelines.",
     content: "Coming soon...",
     date: "2025-08-01",
-    tags: ["AI", "Automation", "Video Editing", "RAG"],
+    tags: ["Data Quality", "Governance", "Compliance", "Data Engineering"],
     readTime: 6,
     published: false
   }

@@ -5,23 +5,23 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "S. Abhijit Rao - Agentic AI Engineer",
+    default: "S. Abhijit Rao - Data Engineer",
     template: "%s | S. Abhijit Rao",
   },
   description:
-    "AI Engineer specializing in agentic workflows, RAG pipelines, and multi-agent systems. B.Tech AI Graduate with experience at Prodigal AI.",
+    "Data Engineer specializing in scalable data pipelines, ETL/ELT workflows, and distributed data systems using Python, PySpark, and SQL. B.Tech AI Graduate.",
   keywords: [
-    "AI Engineer",
-    "LangChain",
-    "LangGraph",
-    "RAG",
-    "FastAPI",
+    "Data Engineer",
+    "PySpark",
+    "ETL",
+    "SQL",
     "Python",
-    "Machine Learning",
-    "Multi-Agent Systems",
-    "Agentic AI",
-    "Vector Databases",
-    "ChromaDB",
+    "AWS",
+    "Apache Airflow",
+    "PostgreSQL",
+    "Data Pipelines",
+    "Distributed Computing",
+    "Data Warehousing",
   ],
   authors: [{ name: "S. Abhijit Rao" }],
   creator: "S. Abhijit Rao",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "S. Abhijit Rao Portfolio",
-    title: "S. Abhijit Rao - Agentic AI Engineer",
+    title: "S. Abhijit Rao - Data Engineer",
     description:
-      "AI Engineer specializing in agentic workflows, RAG pipelines, and multi-agent systems.",
+      "Data Engineer specializing in scalable data pipelines, ETL/ELT workflows, and distributed data systems using Python, PySpark, and SQL.",
   },
   robots: {
     index: true,

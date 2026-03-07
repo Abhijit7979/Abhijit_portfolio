@@ -4,24 +4,24 @@ export const experiences: Experience[] = [
   {
     id: "astraveda",
     company: "Astraveda",
-    role: "Freelance AI Engineer",
+    role: "AI Engineer (Freelance)",
     duration: {
       start: "Jan 2026",
       end: "Present"
     },
     location: "Remote",
-    description: "Architected and deployed production-ready website and web application, maintaining full ownership of development, infrastructure, and hosting operations for enterprise petroleum analytics platform.",
+    description: "Architected and deployed production data infrastructure for enterprise petroleum analytics platform, owning end-to-end database design, ETL pipelines, cloud operations, and data monitoring serving live business users.",
     responsibilities: [
-      "Engineered full-stack solution leveraging Next.js, Tailwind CSS, Shadcn UI, FastAPI, PostgreSQL, LangChain, and LangGraph to deliver scalable AI-powered features across client-facing and internal systems",
-      "Accelerated development velocity using Claude Code, Google Gemini, Google Flow alongside AWS Amplify, AWS Lambda, Supabase, Groq, and Mistral AI for robust cloud infrastructure and LLM orchestration",
-      "Delivered two core AI capabilities: \"Ask Astra\" multi-agent conversational chatbot and \"Click Astra\" OCR solution for automated document processing"
+      "Engineered scalable data pipelines using Python, FastAPI, and PostgreSQL with AWS services (Lambda, S3, Amplify) for automated data ingestion, transformation, and delivery across multiple data sources",
+      "Built automated document processing pipeline (\"Click Astra\" OCR) extracting structured data from unstructured documents, implementing data validation, quality controls, and compliance checks with error handling workflows",
+      "Developed multi-source data retrieval and aggregation system (\"Ask Astra\") enabling real-time analytics queries across enterprise datasets using LangChain and LangGraph orchestration"
     ],
     achievements: [],
     productionLinks: {
       website: "https://www.petro-astra.in",
       app: "https://app.petro-astra.in"
     },
-    technologies: ["Next.js", "Tailwind CSS", "Shadcn UI", "FastAPI", "PostgreSQL", "LangChain", "LangGraph", "AWS Amplify", "AWS Lambda", "Supabase", "Groq", "Mistral AI"]
+    technologies: ["Python", "FastAPI", "PostgreSQL", "AWS Lambda", "AWS S3", "AWS Amplify", "LangChain", "LangGraph", "Supabase", "Next.js"]
   },
   {
     id: "nuevosol-energy",
@@ -32,13 +32,13 @@ export const experiences: Experience[] = [
       end: "Dec 2025"
     },
     location: "Head office Madhapur, Hyderabad, India",
-    description: "Engineered enterprise Agentic RAG chatbot enabling team members to query internal documentation through natural language, dramatically reducing information retrieval time and improving operational efficiency.",
+    description: "Designed and built data ingestion and retrieval pipelines enabling enterprise-wide access to internal documentation through automated data extraction, transformation, and indexing workflows, delivering the solution on time to stakeholders.",
     responsibilities: [
-      "Architected multi-agent retrieval system using LangGraph orchestration, OpenAI LLMs, and ChromaDB vector database, implementing semantic search across company knowledge base",
-      "Deployed full-stack solution with Next.js frontend (Vercel) and FastAPI backend (Render), delivering production-ready chat interface with real-time response capabilities"
+      "Implemented scalable data processing workflows using Python and SQL, integrating multiple data sources into a unified searchable knowledge base with vector database (ChromaDB) for semantic indexing",
+      "Deployed end-to-end data solution with FastAPI backend and Next.js frontend on cloud infrastructure (Vercel, Render), ensuring reliable data delivery and real-time query capabilities"
     ],
     achievements: [],
-    technologies: ["LangGraph", "OpenAI", "ChromaDB", "Next.js", "FastAPI", "Vercel", "Render"]
+    technologies: ["Python", "SQL", "ChromaDB", "FastAPI", "Next.js", "Vercel", "Render"]
   },
   {
     id: "prodigal-ai",
@@ -49,14 +49,14 @@ export const experiences: Experience[] = [
       end: "June 2025"
     },
     location: "Remote, India",
-    description: "Worked on Dhanur AI, a cutting-edge video editing automation platform by Prodigal AI that transforms raw user video into polished YouTube/Shorts-ready content using Langchain framework.",
+    description: "Developed automated ETL pipelines for Dhanur AI video processing platform, transforming raw media data into structured, production-ready outputs using Python and distributed processing techniques.",
     responsibilities: [
-      "Implemented Retrieval-Augmented Generation (RAG) pipelines integrated with vector databases for intelligent context retrieval of b-roll, filters and transition segmentation using ChromaDB",
-      "Reduced manual editing time significantly through intelligent automation, enhancing creator productivity"
+      "Built data pipelines integrated with vector databases for intelligent data retrieval, content segmentation, and metadata extraction using ChromaDB, processing large-scale unstructured data",
+      "Reduced manual data processing time significantly through pipeline automation and performance tuning for cost-effectiveness, improving throughput and operational efficiency across the content production workflow"
     ],
     achievements: [
-      "Awarded Intern of the Month in April 2025 for exceptional performance and innovation"
+      "Awarded Intern of the Month in April 2025 for exceptional performance and innovation in data pipeline development"
     ],
-    technologies: ["Python", "LangChain", "ChromaDB", "RAG", "Vector Databases", "FastAPI"]
+    technologies: ["Python", "ChromaDB", "ETL Pipelines", "Vector Databases", "FastAPI", "Data Processing"]
   }
 ];

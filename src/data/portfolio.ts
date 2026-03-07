@@ -2,14 +2,14 @@ import { PersonalInfo, SocialLink } from '@/types/portfolio';
 
 export const personalInfo: PersonalInfo = {
   name: "S. Abhijit Rao",
-  role: "AI Engineer | B.Tech AI",
-  tagline: "RAG, multi-agent workflows, and production AI systems. Building enterprise solutions as a freelance AI engineer.",
-  bio: "AI Engineer with production expertise in Retrieval-Augmented Generation (RAG) systems and multi-agent workflows. Reduced manual file search time at Nuevosol Energy through an Agentic RAG chatbot and streamlined video editing workflows at Prodigal AI, earning Intern of the Month (April 2025). Specialized in LangChain/LangGraph, vector databases, and backend AI development. Currently building enterprise AI solutions as a freelance engineer at Astraveda—Ask Astra chatbot and Click Astra OCR for petroleum analytics—with hands-on experience in agentic AI, LLM orchestration, and modern AI infrastructure.",
+  role: "Data Engineer | B.Tech AI",
+  tagline: "Scalable data pipelines, ETL/ELT workflows, and distributed data systems using Python, PySpark, and SQL. Building production-grade data infrastructure on cloud platforms.",
+  bio: "Data Engineer with hands-on experience designing and deploying scalable data pipelines, ETL/ELT workflows, and distributed data systems using Python, PySpark, and SQL. Proven ability to build production-grade data infrastructure integrating cloud platforms (AWS), databases, and automated ingestion frameworks. Delivered end-to-end data solutions on time across multiple organizations, including enterprise analytics platforms with PostgreSQL, API integrations, and workflow orchestration using Airflow. Strong foundation in data quality, performance optimization, and cross-functional stakeholder collaboration. B.Tech in AI with coursework in distributed computing, database systems, and cloud computing.",
   email: "sar.abhijit2003@gmail.com",
   phone: "+91 9985727779",
   location: "India",
   profileImage: "/images/profile/abhijit-rao.jpg",
-  resumeUrl: "/resume/Abhijit_rao_AI_Engineer.pdf"
+  resumeUrl: "/resume/Abhijit_rao_Data_Engineer.pdf"
 };
 
 /** Used for GitHub contribution/activity graph embeds */
@@ -28,7 +28,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     platform: "website",
-    url: "https://www.abhijit-rao.me",
+    url: "https://ibm.abhijit-rao.me",
     icon: "Globe"
   },
   {
