@@ -45,7 +45,7 @@ export const ServicesSection = () => {
                   </p>
                   {tier && (
                     <span className="mt-1 inline-flex w-fit items-center gap-2 rounded-full border border-border bg-background/60 px-3 py-1.5 text-xs text-muted-foreground">
-                      {tier.priceInr === 'Free' ? 'Free' : `From ${tier.priceInr}`}
+                      {tier.price}
                       <ArrowRight className="h-3 w-3 text-primary" />
                     </span>
                   )}

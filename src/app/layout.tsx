@@ -91,7 +91,7 @@ const jsonLd = {
         "RAG Troubleshooting",
         "Production Readiness Review",
       ],
-      priceRange: "₹₹",
+      priceRange: "$$",
       ...(bookingUrl ? { potentialAction: { "@type": "ReserveAction", target: bookingUrl } } : {}),
     },
   ],

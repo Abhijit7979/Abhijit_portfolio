@@ -6,11 +6,25 @@
  */
 
 /**
- * TODO(abhijit): replace with your real Calendly / Cal.com link.
- * Until then the site links to WhatsApp + email instead, so no CTA is dead.
- * You can find a free booking page at cal.com (no card needed).
+ * The Cal.com booking page. Every "Book a call" button on the site points here.
+ * Currently: the 30-minute Clarity Call.
+ *
+ * To change which event people book, just swap this URL. Examples:
+ *   30-min Clarity Call   https://cal.com/abhijit-rao-shivaiahgari-eezgss/30min
+ *   90-min Deep-Dive      https://cal.com/abhijit-rao-shivaiahgari-eezgss/architecture-deep-dive
  */
-export const bookingUrl = '';
+export const bookingUrl = 'https://cal.com/abhijit-rao-shivaiahgari-eezgss/30min';
+
+/**
+ * The 90-minute paid Architecture Deep-Dive.
+ * Falls back to the free 30-min call until this Cal.com event exists,
+ * so the "Book the deep-dive" button is never dead.
+ *
+ * TO SET UP: in Cal.com click "New" -> 90 minutes, name it
+ * "Architecture Deep-Dive", set price to $50, enable payment collection,
+ * then paste its URL below.
+ */
+export const deepDiveBookingUrl = '';
 
 /** Fallback CTAs used when bookingUrl is empty. */
 export const contactLinks = {
@@ -85,8 +99,8 @@ export interface PricingTier {
   id: string;
   name: string;
   duration: string;
-  priceInr: string;
-  priceUsd?: string;
+  /** Display price in USD, e.g. 'Free', '$50', 'From $500'. */
+  price: string;
   /** Short qualifier under the price */
   priceNote: string;
   bestFor: string;
@@ -101,7 +115,7 @@ export const pricingTiers: PricingTier[] = [
     id: 'clarity',
     name: 'Clarity Call',
     duration: '30 min · video',
-    priceInr: 'Free',
+    price: 'Free',
     priceNote: 'No pitch, no obligation',
     bestFor: 'You have an idea and want a straight answer on whether it is worth building.',
     includes: [
@@ -115,8 +129,7 @@ export const pricingTiers: PricingTier[] = [
     id: 'deep-dive',
     name: 'Architecture Deep-Dive',
     duration: '90 min · video + written plan',
-    priceInr: '₹6,999',
-    priceUsd: '$89',
+    price: '$50',
     priceNote: 'Pay before the call',
     bestFor:
       'You need a real plan — a working team, a budget, or a board asking questions you cannot answer.',
@@ -134,8 +147,7 @@ export const pricingTiers: PricingTier[] = [
     id: 'build',
     name: 'Build Partnership',
     duration: 'Ongoing · scoped projects',
-    priceInr: 'From ₹40,000',
-    priceUsd: 'From $550',
+    price: 'From $500',
     priceNote: 'Scoped after the call',
     bestFor:
       'You liked the plan and want it actually built, by the person who wrote it.',
@@ -207,6 +219,10 @@ export const faqs: FaqItem[] = [
   {
     q: 'Do you offer refunds if the plan is not useful?',
     a: 'The Clarity Call is free, so there is no risk there. For the Deep-Dive, if the written plan is not useful to you, say so within 7 days and I will refund it in full.',
+  },
+  {
+    q: 'How do I pay for the Deep-Dive?',
+    a: 'You pay when you book, through Cal.com. It takes a card or UPI, and the receipt is automatic. There is no invoice to chase and no payment after the fact.',
   },
   {
     q: 'What timezone do you work in?',

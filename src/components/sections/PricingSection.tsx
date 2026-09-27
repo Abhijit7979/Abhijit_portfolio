@@ -5,7 +5,7 @@ import { SectionContainer } from '@/components/layout/SectionContainer';
 import { SectionHeading } from '@/components/layout/SectionHeading';
 import { FadeInView } from '@/components/animations/FadeInView';
 import { BookButton } from '@/components/lead/BookButton';
-import { pricingTiers, contactLinks } from '@/data/services';
+import { pricingTiers, contactLinks, deepDiveBookingUrl, bookingUrl } from '@/data/services';
 import { cn } from '@/lib/utils';
 
 /**
@@ -46,11 +46,8 @@ export const PricingSection = () => {
 
               <div className="mt-6 flex items-baseline gap-2">
                 <span className="font-heading text-4xl font-extrabold tracking-tight text-foreground">
-                  {tier.priceInr}
+                  {tier.price}
                 </span>
-                {tier.priceUsd && (
-                  <span className="text-base text-muted-foreground">{tier.priceUsd}</span>
-                )}
               </div>
               <p className="mt-1.5 text-xs text-muted-foreground/80">{tier.priceNote}</p>
 
@@ -78,6 +75,11 @@ export const PricingSection = () => {
                   </BookButton>
                 ) : (
                   <BookButton
+                    href={
+                      tier.id === 'deep-dive' && deepDiveBookingUrl
+                        ? deepDiveBookingUrl
+                        : bookingUrl
+                    }
                     variant={tier.featured ? 'primary' : 'outline'}
                     className="w-full"
                   >
@@ -91,8 +93,7 @@ export const PricingSection = () => {
       </div>
 
       <p className="mt-8 text-center text-sm text-muted-foreground/80">
-        Prices in INR. USD shown for reference at current rates. Need something
-        else?{' '}
+        All prices in USD. Need something else?{' '}
         <a
           href={contactLinks.email}
           className="text-primary underline-offset-4 hover:underline"
