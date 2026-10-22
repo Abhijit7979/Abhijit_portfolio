@@ -2,14 +2,14 @@ import { PersonalInfo, SocialLink } from '@/types/portfolio';
 
 export const personalInfo: PersonalInfo = {
   name: "S. Abhijit Rao",
-  role: "AI Engineer | B.Tech AI",
-  tagline: "RAG, multi-agent workflows, and production AI systems. Building enterprise solutions as a freelance AI engineer.",
-  bio: "AI Engineer with production expertise in Retrieval-Augmented Generation (RAG) systems and multi-agent workflows. Reduced manual file search time at Nuevosol Energy through an Agentic RAG chatbot and streamlined video editing workflows at Prodigal AI, earning Intern of the Month (April 2025). Specialized in LangChain/LangGraph, vector databases, and backend AI development. Currently building enterprise AI solutions as a freelance engineer at Astraveda—Ask Astra chatbot and Click Astra OCR for petroleum analytics—with hands-on experience in agentic AI, LLM orchestration, and modern AI infrastructure.",
+  role: "Junior Full Stack & UI Developer",
+  tagline: "Building web applications with Next.js, React, Tailwind CSS, FastAPI, and PostgreSQL.",
+  bio: "Developer with hands-on experience building and deploying web applications using Next.js, React, Tailwind CSS, FastAPI, and PostgreSQL. Delivered an enterprise petroleum analytics platform and an internal documentation chatbot, connecting user interfaces with backend APIs and AI workflows. Seeking Junior Full Stack and UI Developer roles with a focus on frontend development, API integration, database-backed applications, and cloud deployment.",
   email: "sar.abhijit2003@gmail.com",
   phone: "+91 9985727779",
   location: "India",
   profileImage: "/images/profile/abhijit-rao.jpg",
-  resumeUrl: "/resume/Abhijit_rao_AI_Engineer.pdf"
+  resumeUrl: "/resume/Abhijit_Rao_Resume.pdf"
 };
 
 /** Used for GitHub contribution/activity graph embeds */

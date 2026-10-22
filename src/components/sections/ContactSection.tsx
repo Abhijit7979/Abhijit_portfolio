@@ -66,7 +66,7 @@ export const ContactSection = () => {
             aria-hidden
           />
           <p className="mt-8 text-muted-foreground leading-relaxed text-lg max-w-xl mx-auto">
-            Interested in collaborating on AI projects or discussing opportunities? I’d love to hear from you.
+            Interested in working together on a full stack or UI project? I’d love to hear from you.
           </p>
         </motion.div>
 

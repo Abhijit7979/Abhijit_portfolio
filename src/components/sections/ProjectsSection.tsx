@@ -15,7 +15,7 @@ export const ProjectsSection = () => {
           <SectionHeading
             label="Work"
             title="Projects"
-            description="A showcase of my work in AI/ML, data science, and software development"
+            description="Full stack applications, practical AI tools, and user-focused interfaces"
           />
           <StaggerContainer className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl">
             {projects.map((project) => (

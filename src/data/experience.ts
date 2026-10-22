@@ -2,61 +2,71 @@ import { Experience } from '@/types/portfolio';
 
 export const experiences: Experience[] = [
   {
-    id: "astraveda",
-    company: "Astraveda",
-    role: "Freelance AI Engineer",
-    duration: {
-      start: "Jan 2026",
-      end: "Present"
-    },
+    id: "must-company",
+    company: "MUST Company",
+    role: "Forward Deployed Engineer",
+    duration: { start: "Jul 2026", end: "Present" },
     location: "Remote",
-    description: "Architected and deployed production-ready website and web application, maintaining full ownership of development, infrastructure, and hosting operations for enterprise petroleum analytics platform.",
+    description: "Co-developed MatchHire, a recruitment platform delivered in two months and used to manage approximately 200 applications per week.",
     responsibilities: [
-      "Engineered full-stack solution leveraging Next.js, Tailwind CSS, Shadcn UI, FastAPI, PostgreSQL, LangChain, and LangGraph to deliver scalable AI-powered features across client-facing and internal systems",
-      "Accelerated development velocity using Claude Code, Google Gemini, Google Flow alongside AWS Amplify, AWS Lambda, Supabase, Groq, and Mistral AI for robust cloud infrastructure and LLM orchestration",
-      "Delivered two core AI capabilities: \"Ask Astra\" multi-agent conversational chatbot and \"Click Astra\" OCR solution for automated document processing"
+      "Worked with recruiters on lead auto-assignment, candidate pipeline tracking, and monthly sourcing and conversion reports.",
+      "Improved Must Flow navigation and dark-mode consistency using Claude Code and Codex for implementation, debugging, and review, with automated tests and browser checks."
     ],
     achievements: [],
-    productionLinks: {
-      website: "https://www.petro-astra.in",
-      app: "https://app.petro-astra.in"
-    },
-    technologies: ["Next.js", "Tailwind CSS", "Shadcn UI", "FastAPI", "PostgreSQL", "LangChain", "LangGraph", "AWS Amplify", "AWS Lambda", "Supabase", "Groq", "Mistral AI"]
+    technologies: ["React", "UI Development", "Automated Testing"]
+  },
+  {
+    id: "axension-ai",
+    company: "Axension AI",
+    role: "AI / ML Intern",
+    duration: { start: "Apr 2026", end: "May 2026" },
+    location: "Remote",
+    description: "Contributed to an AI-powered RFQ agent for pharmaceutical procurement, covering supplier discovery, quotation processing, and human-reviewed workflows.",
+    responsibilities: [
+      "Worked across an Electron and React desktop interface and a Python / FastAPI backend using TypeScript, Tailwind CSS, and PostgreSQL.",
+      "Translated procurement requirements into workflows and designs for AI-assisted document parsing, supplier comparison, and approvals."
+    ],
+    achievements: [],
+    technologies: ["Electron", "React", "TypeScript", "Tailwind CSS", "Python", "FastAPI", "PostgreSQL"]
+  },
+  {
+    id: "astraveda",
+    company: "AstraVeda AI",
+    role: "Generative AI Engineer — Freelance",
+    duration: { start: "Jan 2026", end: "Mar 2026" },
+    location: "Remote",
+    description: "Built and deployed an enterprise petroleum analytics website and web application, owning development, infrastructure, and hosting.",
+    responsibilities: [
+      "Connected Next.js, Tailwind CSS, and shadcn/ui interfaces with FastAPI and PostgreSQL services.",
+      "Delivered Ask Astra, a multi-agent conversational chatbot, and Click Astra, an OCR solution for automated document processing, using LangChain and LangGraph."
+    ],
+    achievements: [],
+    productionLinks: { website: "https://petro-astra.in", app: "https://app.petro-astra.in" },
+    technologies: ["Next.js", "Tailwind CSS", "shadcn/ui", "FastAPI", "PostgreSQL", "LangChain", "LangGraph"]
   },
   {
     id: "nuevosol-energy",
     company: "Nuevosol Energy Pvt Ltd",
     role: "AI Intern",
-    duration: {
-      start: "Nov 2025",
-      end: "Dec 2025"
-    },
-    location: "Head office Madhapur, Hyderabad, India",
-    description: "Engineered enterprise Agentic RAG chatbot enabling team members to query internal documentation through natural language, dramatically reducing information retrieval time and improving operational efficiency.",
+    duration: { start: "Nov 2025", end: "Dec 2025" },
+    location: "Madhapur, Hyderabad, India",
+    description: "Built an enterprise documentation chatbot for a 15-person team to query internal documents in natural language.",
     responsibilities: [
-      "Architected multi-agent retrieval system using LangGraph orchestration, OpenAI LLMs, and ChromaDB vector database, implementing semantic search across company knowledge base",
-      "Deployed full-stack solution with Next.js frontend (Vercel) and FastAPI backend (Render), delivering production-ready chat interface with real-time response capabilities"
+      "Connected a Next.js frontend with a FastAPI backend, integrating LangGraph, OpenAI, and ChromaDB for retrieval and conversational responses.",
+      "Deployed and maintained the frontend on Vercel and backend on Render for internal users."
     ],
     achievements: [],
-    technologies: ["LangGraph", "OpenAI", "ChromaDB", "Next.js", "FastAPI", "Vercel", "Render"]
+    technologies: ["Next.js", "FastAPI", "LangGraph", "OpenAI", "ChromaDB", "Vercel", "Render"]
   },
   {
     id: "prodigal-ai",
     company: "Prodigal AI",
     role: "Agentic AI Intern",
-    duration: {
-      start: "Feb 2025",
-      end: "June 2025"
-    },
+    duration: { start: "Mar 2025", end: "Jul 2025" },
     location: "Remote, India",
-    description: "Worked on Dhanur AI, a cutting-edge video editing automation platform by Prodigal AI that transforms raw user video into polished YouTube/Shorts-ready content using Langchain framework.",
-    responsibilities: [
-      "Implemented Retrieval-Augmented Generation (RAG) pipelines integrated with vector databases for intelligent context retrieval of b-roll, filters and transition segmentation using ChromaDB",
-      "Reduced manual editing time significantly through intelligent automation, enhancing creator productivity"
-    ],
-    achievements: [
-      "Awarded Intern of the Month in April 2025 for exceptional performance and innovation"
-    ],
-    technologies: ["Python", "LangChain", "ChromaDB", "RAG", "Vector Databases", "FastAPI"]
+    description: "Built retrieval pipelines for Dhanur AI, a video-editing automation platform, using LangChain and ChromaDB to find reference clips from video metadata.",
+    responsibilities: ["Integrated retrieval through a FastAPI backend into the editor workflow to support automated video-editing tasks."],
+    achievements: ["Intern of the Month, April 2025"],
+    technologies: ["Python", "LangChain", "ChromaDB", "FastAPI"]
   }
 ];

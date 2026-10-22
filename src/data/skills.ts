@@ -2,55 +2,27 @@ import { SkillCategory } from '@/types/portfolio';
 
 export const skillCategories: SkillCategory[] = [
   {
-    category: "Programming Languages",
-    skills: [
-      { name: "Python", proficiency: "expert" },
-      { name: "SQL", proficiency: "advanced" },
-      { name: "Java", proficiency: "intermediate" },
-      { name: "C++", proficiency: "intermediate" },
-      { name: "Node.js", proficiency: "advanced" }
-    ]
+    category: "Languages",
+    skills: ["JavaScript", "Python", "SQL", "Java", "C++"].map(name => ({ name }))
   },
   {
-    category: "Technologies & Frameworks",
-    skills: [
-      { name: "LangChain", proficiency: "expert" },
-      { name: "LangGraph", proficiency: "expert" },
-      { name: "Langsmith", proficiency: "advanced" },
-      { name: "Phidata", proficiency: "advanced" },
-      { name: "FastAPI", proficiency: "advanced" },
-      { name: "Streamlit", proficiency: "advanced" },
-      { name: "Scikit-Learn", proficiency: "advanced" },
-      { name: "React", proficiency: "advanced" },
-      { name: "Express.js", proficiency: "advanced" },
-      { name: "TensorFlow", proficiency: "intermediate" },
-      { name: "OpenAI APIs", proficiency: "expert" },
-      { name: "ChromaDB", proficiency: "advanced" },
-      { name: "Hugging Face", proficiency: "intermediate" }
-    ]
+    category: "Frontend / UI",
+    skills: ["React", "Next.js", "Tailwind CSS", "shadcn/ui", "Streamlit"].map(name => ({ name }))
   },
   {
-    category: "Concepts & Expertise",
-    skills: [
-      { name: "Retrieval-Augmented Generation (RAG)", proficiency: "expert" },
-      { name: "Multi-Agent Workflows", proficiency: "expert" },
-      { name: "API Development", proficiency: "advanced" },
-      { name: "Model Evaluation", proficiency: "advanced" },
-      { name: "Version Control (Git)", proficiency: "advanced" },
-      { name: "Data Preprocessing", proficiency: "advanced" },
-      { name: "Debugging with Langsmith", proficiency: "advanced" },
-      { name: "Vector Databases", proficiency: "advanced" },
-      { name: "Software Testing", proficiency: "advanced" },
-      { name: "SDLC", proficiency: "advanced" }
-    ]
+    category: "Backend / Databases",
+    skills: ["FastAPI", "Node.js", "Express.js", "PostgreSQL", "SQLite", "Supabase"].map(name => ({ name }))
   },
   {
-    category: "Soft Skills",
-    skills: [
-      { name: "Collaborative Teamwork", proficiency: "expert" },
-      { name: "Adaptability", proficiency: "expert" },
-      { name: "Creativity", proficiency: "advanced" },
-      { name: "Problem Solving", proficiency: "expert" }
-    ]
+    category: "Deployment / Tools",
+    skills: ["Git", "Docker", "Vercel", "Render", "AWS Lambda", "AWS Amplify"].map(name => ({ name }))
+  },
+  {
+    category: "AI Integration",
+    skills: ["LangChain", "LangGraph", "OpenAI API", "ChromaDB", "RAG"].map(name => ({ name }))
+  },
+  {
+    category: "Concepts",
+    skills: ["API Development", "Version Control", "Software Testing", "SDLC", "Multi-Agent Workflows"].map(name => ({ name }))
   }
 ];

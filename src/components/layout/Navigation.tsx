@@ -6,14 +6,14 @@ import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 import { personalInfo } from '@/data/portfolio';
-import { BookButton } from '@/components/lead/BookButton';
 
 const navLinks = [
-  { href: '#services', label: 'Services' },
-  { href: '#pricing', label: 'Pricing' },
-  { href: '#proof', label: 'Proof' },
-  { href: '#process', label: 'How it works' },
-  { href: '#faq', label: 'FAQ' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#achievements', label: 'Achievements' },
+  { href: '#github', label: 'GitHub' },
+  { href: '#contact', label: 'Contact' },
 ];
 
 export const Navigation = () => {
@@ -29,50 +29,41 @@ export const Navigation = () => {
   return (
     <nav
       className={cn(
-        'fixed inset-x-0 top-0 z-50 transition-all duration-300',
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         isScrolled
-          ? 'border-b border-border/50 bg-background/85 backdrop-blur-xl'
+          ? 'bg-background/85 backdrop-blur-xl border-b border-border/50'
           : 'bg-transparent'
       )}
     >
       <div className="mx-auto max-w-6xl px-4 md:px-8">
-        <div className="flex h-16 items-center justify-between gap-4">
+        <div className="flex h-16 items-center justify-between">
           <Link
             href="#"
-            className="shrink-0 font-heading text-base font-semibold text-foreground transition-colors hover:text-primary sm:text-lg"
+            className="font-heading text-lg font-semibold text-foreground hover:text-primary transition-colors duration-200"
           >
             {personalInfo.name}
           </Link>
 
-          <div className="hidden items-center gap-1 lg:flex">
+          <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="group relative rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-primary/5 hover:text-foreground"
+                className="group relative px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200 rounded-md hover:bg-primary/5"
               >
                 <span className="relative z-10">{link.label}</span>
-                <span
-                  className="absolute bottom-1 left-3 right-3 h-px origin-left scale-x-0 rounded-full bg-primary/50 transition-transform group-hover:scale-x-100"
-                  aria-hidden
-                />
+                <span className="absolute bottom-1 left-3 right-3 h-px bg-primary/50 scale-x-0 group-hover:scale-x-100 transition-transform origin-left rounded-full" aria-hidden />
               </a>
             ))}
           </div>
 
-          <div className="flex items-center gap-2">
-            <BookButton className="hidden sm:inline-flex" href="#book">
-              Book a call
-            </BookButton>
-            <button
-              className="rounded-md p-2.5 text-foreground transition-colors hover:bg-primary/10 hover:text-primary lg:hidden"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="Toggle menu"
-              aria-expanded={isMobileMenuOpen}
-            >
-              {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </button>
-          </div>
+          <button
+            className="md:hidden p-2.5 rounded-md text-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
       </div>
 
@@ -83,27 +74,19 @@ export const Navigation = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="overflow-hidden border-t border-border bg-card/95 backdrop-blur-xl lg:hidden"
+            className="md:hidden bg-card/95 backdrop-blur-xl border-t border-border overflow-hidden"
           >
             <div className="flex flex-col gap-1 p-4">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
-                  className="rounded-md px-3 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-primary/10 hover:text-primary"
+                  className="px-3 py-2.5 text-sm font-medium text-foreground hover:bg-primary/10 hover:text-primary rounded-md transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}
                 </a>
               ))}
-              <div className="mt-2 sm:hidden">
-                <BookButton
-                  href="#book"
-                  className="w-full"
-                >
-                  Book a call
-                </BookButton>
-              </div>
             </div>
           </motion.div>
         )}
