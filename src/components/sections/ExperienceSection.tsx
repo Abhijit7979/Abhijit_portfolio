@@ -127,7 +127,7 @@ export const ExperienceSection = () => {
         <SectionHeading
           label="Experience"
           title="Professional Experience"
-          description="A timeline of my roles and key contributions in AI and software engineering."
+          description="A timeline of my work across full stack development, UI, and AI applications."
           className="mb-8 md:mb-10"
         />
         <Timeline data={timelineData} />

@@ -5,23 +5,21 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "S. Abhijit Rao - Agentic AI Engineer",
+    default: "S. Abhijit Rao - Junior Full Stack & UI Developer",
     template: "%s | S. Abhijit Rao",
   },
   description:
-    "AI Engineer specializing in agentic workflows, RAG pipelines, and multi-agent systems. B.Tech AI Graduate with experience at Prodigal AI.",
+    "Junior Full Stack & UI Developer building React and Next.js interfaces with FastAPI and PostgreSQL backends.",
   keywords: [
-    "AI Engineer",
-    "LangChain",
-    "LangGraph",
-    "RAG",
+    "Full Stack Developer",
+    "UI Developer",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
     "FastAPI",
     "Python",
-    "Machine Learning",
-    "Multi-Agent Systems",
-    "Agentic AI",
-    "Vector Databases",
-    "ChromaDB",
+    "PostgreSQL",
+    "AI Applications",
   ],
   authors: [{ name: "S. Abhijit Rao" }],
   creator: "S. Abhijit Rao",
@@ -29,9 +27,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "S. Abhijit Rao Portfolio",
-    title: "S. Abhijit Rao - Agentic AI Engineer",
+    title: "S. Abhijit Rao - Junior Full Stack & UI Developer",
     description:
-      "AI Engineer specializing in agentic workflows, RAG pipelines, and multi-agent systems.",
+      "Junior Full Stack & UI Developer building React and Next.js interfaces with FastAPI and PostgreSQL backends.",
   },
   robots: {
     index: true,

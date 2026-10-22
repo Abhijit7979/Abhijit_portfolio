@@ -55,7 +55,7 @@ export const HeroSection = () => {
               variants={itemVariants}
               className="font-mono text-xs uppercase tracking-[0.2em] text-primary/90 mb-6"
             >
-              AI Engineer · B.Tech AI
+              {personalInfo.role}
             </motion.p>
 
             <motion.h1
